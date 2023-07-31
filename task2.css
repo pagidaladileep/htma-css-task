@@ -1,0 +1,76 @@
+/* Use relative and absolute positioning to place the image and paragraphs within their parent container */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  border: 1px solid black;
+  top: 60px;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.p1 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.p2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Use fixed positioning to create a navigation bar that sticks to the top of the viewport */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: lightblue;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Use transform and transition to create a hover effect and animation for the image gallery */
+.gallery {
+  display: flex;
+  position: relative;
+  top: 100px;
+  background-color: #d3d3d3; /* Darker gray background */
+}
+
+.gallery img {
+  width: 25%;
+  padding-right: 10px;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+img {
+  transition-property: transform; /* specify the property to be animated */
+  transition-duration: .5s; /* specify the duration of the animation */
+  transition-timing-function: ease-in-out; /* specify the speed curve of the animation */
+}

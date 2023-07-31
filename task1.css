@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  height: 90px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 70px;
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  /* Keep the original width and height of the boxes */
+  width: 35%;
+  height: 110px;
+}
+
+.box1 {
+  /* Change the background color for box1 */
+  background-color: lightcoral;
+}
+
+.box2 {
+  /* Change the background color for box2 */
+  background-color: lightblue;
+}
+
+.box3 {
+  /* Change the background color for box3 */
+  background-color: lightyellow;
+}
